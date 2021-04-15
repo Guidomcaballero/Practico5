@@ -7,7 +7,7 @@ package caballero.practico5;
 
 /**
  *
- * @author Usuario
+ * @author Guido Caballero
  */
 public class Arreglo {
     
@@ -21,7 +21,7 @@ public class Arreglo {
     public static int buscarMayor(int bidimensional[][]){
         int aux = 0;
         for (int i=0;i<bidimensional.length;i++){
-            for (int j=0;j<bidimensional[i].length;i++){
+            for (int j=0;j<bidimensional[i].length;j++){
                 if(aux<bidimensional[i][j])
                     aux = bidimensional[i][j];
             }
@@ -29,8 +29,27 @@ public class Arreglo {
         return aux;
     }
     public static int cuentaVocales(String palabra){
-        
-        return 0;
+        int cont = 0;
+        char vocales[]={'a','e','i','o','u','A','E','I','O','U'};
+        char palabraII[] = palabra.toCharArray();
+        for(int i=0;i<palabra.length();i++){
+            for(int j=0;j<10;j++){
+                if(palabraII[i]==vocales[j]){
+                    cont+=1;
+                }
+            }
+        }
+        return cont;    
     }
-}
+    public static int cuentaCaracter(String palabra,char caracter){
+        int cont = 0;
+        char palabraII[] = palabra.toCharArray();
+        for(int i=0;i<palabra.length();i++){
+                if(palabraII[i]==caracter){
+                    cont+=1;
+                }
+        }
+        return cont;    
+    }
+    }
 
