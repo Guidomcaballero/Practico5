@@ -19,9 +19,9 @@ public class PruebaArreglo {
         int arr[]={10,15,32,22,12};
         int bid[][]={{1,3,5},{2,4}};
         System.out.println("La suma de los elementos del arreglo {10,15,32,22,12} es: "+Arreglo.SumarLista(arr));
-        System.out.println("Se utiliza un arreglo bidimensional de la siguiente forma {{1,3,5},{2,4}}, el numero mayor es: " + Arreglo.buscarMayor(bid));
-        System.out.println("La frase ESTO ES UN STRING contiene T: " + Arreglo.cuentaCaracter("Esto es un string", 't')+" veces");
-        System.out.println("La cantidad de vocales en la palabra HOLA es: "+ Arreglo.cuentaVocales("Hola"));
+        System.out.println("Se utiliza un arreglo bidimensional de la siguiente forma {{1,3,5},{2,4}}, el numero mayor es: "+Arreglo.buscarMayor(bid));
+        System.out.println("La frase ESTO ES UN STRING contiene T: "+Arreglo.cuentaCaracter("Esto es un string", 't')+" veces");
+        System.out.println("La cantidad de vocales en la palabra HOLA es: "+Arreglo.cuentaVocales("Hola"));
         
         
     }
